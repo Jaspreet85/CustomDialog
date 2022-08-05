@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/DiaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/DiaAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_address"
+        android:textSize="18sp"
+        />
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rbHe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he"
+            android:textSize="18sp"
+        />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rbShe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/she"
+            android:textSize="18sp"
+             />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rbOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/others"
+            android:textSize="18sp"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etOtherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_gender" />
+
+    <Button
+        android:id="@+id/diaUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+</layout>

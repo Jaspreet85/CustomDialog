@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Custom Dialog</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_address">Your Address</string>
+    <string name="your_gender">Your Gender</string>
+    <string name="Update">UPDATE</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_address">Enter address</string>
+    <string name="he">He</string>
+    <string name="she">She</string>
+    <string name="others">Others</string>
+    <string name="enter_gender">Enter gender</string>
+    <string name="update">UPDATE</string>
+</resources>
