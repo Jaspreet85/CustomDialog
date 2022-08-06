@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         tvName = findViewById(R.id.tvName)
         tvAddress = findViewById(R.id.tvAddress)
         tvGender = findViewById(R.id.tvGender)
-
         btnUpdate.setOnClickListener {
 
             var dialogBinding = CustomLayoutBinding.inflate(layoutInflater)
@@ -37,7 +36,18 @@ class MainActivity : AppCompatActivity() {
             )
             dialogBinding.DiaName.setText(tvName.text.toString())
             dialogBinding.DiaAddress.setText(tvAddress.text.toString())
-
+            if(tvGender.text=="Male"){
+                dialogBinding.rbHe.setChecked(true)
+            }
+            else if(tvGender.text=="Female"){
+                dialogBinding.rbShe.setChecked(true)
+            }
+            else
+            {
+                dialogBinding.rbOthers.setChecked(true)
+                dialogBinding.etOtherName.visibility == View.VISIBLE
+               dialogBinding.etOtherName.setText(tvGender.text)
+            }
 
             dialogBinding.diaUpdate.setOnClickListener {
 
@@ -63,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (dialogBinding.DiaAddress.text.toString().isNullOrEmpty()) {
                     Toast.makeText(this, "enter address", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
-                } else if ((dialogBinding.etOtherName.visibility == View.VISIBLE) && (dialogBinding.etOtherName.text.toString()
+                } else if ((dialogBinding.rbOthers.isChecked) && (dialogBinding.etOtherName.text.toString()
                         .isNullOrEmpty())
                 ) {
                     Toast.makeText(this, "enter other gender", Toast.LENGTH_SHORT).show()

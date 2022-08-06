@@ -34,15 +34,12 @@
         android:text="@string/your_address"
         android:textSize="20sp"
         android:textStyle="bold"
-
         />
     <TextView
         android:id="@+id/tvAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/margin_20sp"
-
-
         />
         <TextView
             android:layout_width="match_parent"
